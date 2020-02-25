@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Sender",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/sender.py",
+            "console": "integratedTerminal",
+            "args": [
+                        "-H", "127.0.0.1",
+                        "-p", "10001",
+                        "-n", "10",
+                        "-v"
+                    ]
+        },
+        {
+            "name": "Python: Receiver",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/receiver.py",
+            "console": "integratedTerminal",
+            "args": [
+                        "-p", "10001",
+                        "-v"
+                    ]
+        },
+        {
+            "name": "Python: Arquivo Atual",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
